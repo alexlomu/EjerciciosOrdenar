@@ -4,7 +4,7 @@ https://github.com/alexlomu/EjerciciosOrdenar
 
 Para esta entrega hemos tenido que realizar 3 ejercicios:
 # Ejercicio 4. Ordenación por inserción dicotómica
-En este ejercicio nos piden que dada una lista con elementos comparablemos, ordenemos estos. He creado diferentes funciones dependiendo del tipo de elementos que queramos introducir en la lista. El código propuesto es el siguiente:
+En este ejercicio nos piden que dada una lista con elementos comparables, ordenemos los mismos. He creado diferentes funciones dependiendo del tipo de elementos que queramos introducir en la lista. El código propuesto es el siguiente:
 ```
 #Ordenación por inserción dicotómica
 def pedir_lista_numeros():
