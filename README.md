@@ -78,6 +78,10 @@ def ordenar_lista_bool(lista_bool):
 # Ejercicio 5. Una ordenación topológica
 En este ejercicio nos piden realizar un algoitmo que ordene unas tareas y sea capaz de determinar cuando dos de estas se pueden realizar a la vez o no.
 El diagrama de flujo propuesto es el siguiente:
+
+
+
+
 ![figma2](https://user-images.githubusercontent.com/91721507/158076354-6c1b6661-bd63-48fd-8fb3-cbb3538fb50e.PNG)
 
 El código propuesto es el siguiente:
