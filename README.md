@@ -119,6 +119,7 @@ ordenar_lista(list)
 # Ejercicio 6. Completar las especificaciones
 Para este ejercicio nos piden que dado un rango definido con un máximo y un mínimo se compruebe y ordene dentro de ese rango, los elementos de una lista. Además debemos hacer una copia de seguridad del máximo del segmento, desplazar los elementos una celda a la izquierda y colocar el elemento más grande del segmento en lo "alto". El diagrama del flujo propuesto es el siguiente:
 
+![figma3](https://user-images.githubusercontent.com/91721507/158080123-2767c50f-6d7c-49aa-b9ac-6d72e1a374e1.PNG)
 
 
 El código propuesto es el siguiente:
