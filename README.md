@@ -4,7 +4,12 @@ https://github.com/alexlomu/EjerciciosOrdenar
 
 Para esta entrega hemos tenido que realizar 3 ejercicios:
 # Ejercicio 4. Ordenación por inserción dicotómica
-En este ejercicio nos piden que dada una lista con elementos comparables, ordenemos los mismos. He creado diferentes funciones dependiendo del tipo de elementos que queramos introducir en la lista. El código propuesto es el siguiente:
+En este ejercicio nos piden que dada una lista con elementos comparables, ordenemos los mismos. He creado diferentes funciones dependiendo del tipo de elementos que queramos introducir en la lista. El diagrama de flujo propuesto es el siguiente:
+![figma1](https://user-images.githubusercontent.com/91721507/158076314-9ebb113d-ccdd-4bb9-9c0f-db28abe83354.PNG)
+
+
+
+El código propuesto es el siguiente:
 ```
 #Ordenación por inserción dicotómica
 def pedir_lista_numeros():
@@ -72,6 +77,10 @@ def ordenar_lista_bool(lista_bool):
   ```
 # Ejercicio 5. Una ordenación topológica
 En este ejercicio nos piden realizar un algoitmo que ordene unas tareas y sea capaz de determinar cuando dos de estas se pueden realizar a la vez o no.
+El diagrama de flujo propuesto es el siguiente:
+![figma2](https://user-images.githubusercontent.com/91721507/158076354-6c1b6661-bd63-48fd-8fb3-cbb3538fb50e.PNG)
+
+El código propuesto es el siguiente:
 ```
 #Una ordenación topológica
 list = []
