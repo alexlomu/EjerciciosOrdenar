@@ -10,6 +10,7 @@ def pedir_lista_numeros(lista_numeros):
       print("La lista introducida es: ", lista_numeros)
       break
   return lista_numeros
+
 def ordenar_lista_numeros(lista_numeros):
   lista_numeros.sort()
   print("La lista ordenada es: ", lista_numeros)  
@@ -18,42 +19,41 @@ def ordenar_lista_numeros(lista_numeros):
 
 lista_palabras = []
 def pedir_lista_palabras(lista_palabras):
-  while True:
-    entrada = input("Introduce una palabra que se introducirá en la lista y dale al enter.")
-    try: 
-      entrada != int(entrada) 
+  tamaño_lista = int(input("Escribe cuantas variables introducirás en la lista." ))
+  i= 0
+  for i in range(tamaño_lista-1):
+    entrada =input("Introduce una palabra que se introducirá en la lista y dale al enter.")
+    if entrada != "":
       lista_palabras.append(entrada)
-    except:
-      print("La lista introducida es: ", lista_palabras)
-      break
-  return lista_palabras
+      i += 1
+    else:
+      print("Has introducido algo erroneo, por favor vuelve a introducir las variables desde el principio")
+      pedir_lista_palabras(lista_palabras)
+
 
 def ordenar_lista_palabras(lista_palabras):
   lista_palabras.sort()
   print("La lista ordenada es: ", lista_palabras)  
   return lista_palabras
 
-def pedir_lista_bool():
-  lista_bool = []
-  while True:
+
+
+lista_bool = []
+def pedir_lista_bool(lista_bool):
+  tamaño_lista = int(input("Escribe cuantas variables introducirás en la lista." ))
+  i= 0
+  for i in range(tamaño_lista-1):
     entrada =input("Introduce un boolean (True o False) que se introducirá en la lista y dale al enter.")
-    if entrada == "True" or "False":  
+    if entrada == "True" or "False":
       lista_bool.append(entrada)
+      i += 1
     else:
-      break
-  
+      print("Has introducido algo erroneo, por favor vuelve a introducir las variables desde el principio")
+      pedir_lista_bool(lista_bool)
   print("La lista introducida es: ", lista_bool)
   return lista_bool
 def ordenar_lista_bool(lista_bool):
-  i = 0
-  elementos = len(lista_bool)
-  for i in range((elementos-1)):
-    if lista_bool[i] == "True" and lista_bool[i] != lista_bool[i+1]:
-      eliminar = lista_bool[i]
-      lista_bool.pop(i)
-      lista_bool.append(eliminar)
-    else:
-      i += 1
+  lista_bool.sort()
   print("La lista ordenada es: ", lista_bool)
   return lista_bool
 
@@ -65,10 +65,10 @@ if tipo_lista == 1:
   ordenar_lista_numeros(lista_numeros)
 elif tipo_lista == 2:
   lista_palabras = []
-  pedir_lista_palabras()
+  pedir_lista_palabras(lista_palabras)
   ordenar_lista_palabras(lista_palabras)
 elif tipo_lista == 3:
   lista_bool = []
-  pedir_lista_bool()
+  pedir_lista_bool(lista_bool)
   ordenar_lista_bool(lista_bool)
 
